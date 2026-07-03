@@ -1,0 +1,247 @@
+<!-- 화면구성. -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개</title>
+
+    <link rel="stylesheet" href="/static/css/global.css">
+
+
+</head>
+
+<body>
+    <!-- 사이트만들때 네비라인은 사이즈를 고정시켜야한다. -->
+    <header>
+        <div class="inner">
+            <!-- Logo -->
+            <a href="/" class="logo">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">company</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <a href="#about" class="menu-item active">회사소개</a>
+                <a href="#projects" class="menu-item">프로젝트</a>
+                <a href="#news" class="menu-item">뉴스기사</a>
+                <a href="#location" class="menu-item">오시는길</a>
+            </nav>
+
+            <!-- Social Logins -->
+            <div class="login-group">
+                <button class="btn-login btn-kakao">
+                    <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
+                        fill="currentColor">
+                        <path
+                            d="M12 3c-4.97 0-9 3.185-9 7.115 0 2.557 1.707 4.8 4.27 6.054-.27 1.01-.98 3.655-1.12 4.237-.17.69.25.68.53.5 2.18-1.442 3.39-2.277 4.7-3.155.2.02.4.03.62.03 4.97 0 9-3.186 9-7.116C21 6.185 16.97 3 12 3z" />
+                    </svg>
+                    <span>카카오 로그인</span>
+                </button>
+                <button class="btn-login btn-naver">
+                    <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"
+                        fill="currentColor">
+                        <path d="M16.2 3h4.8v18h-4.8l-8.4-12v12H3V3h4.8l8.4 12V3z" />
+                    </svg>
+                    <span>네이버 로그인</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-tag">We Are AI Hub</div>
+                <h1>기술과 비즈니스를 잇는<br><span>지능형 플랫폼</span>의 주역</h1>
+                <p class="hero-desc">
+                    AI Hub는 안전하고 투명한 AI 거버넌스 기술을 개발하여 대기업 및 공공기관의 업무 효율성을 극대화합니다.
+                    인프라 비용 최적화부터 철저한 보안 모니터링까지 올인원 AI 관리를 지향합니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- About Section (Core Values) -->
+        <section id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Core Values</span>
+                    <h2>AI Hub의 3대 핵심 가치</h2>
+                </div>
+
+                <div class="grid-3">
+                    <!-- Value 1 -->
+                    <div class="card">
+                        <div class="card-icon">🛡️</div>
+                        <h3>강력한 보안성</h3>
+                        <p>사내 기밀 데이터가 외부 공용 AI 모델 학습에 사용되지 않도록 실시간 보안 모니터링 필터 및 토큰 관리 솔루션을 운영합니다.</p>
+                    </div>
+                    <!-- Value 2 -->
+                    <div class="card">
+                        <div class="card-icon">💰</div>
+                        <h3>비용 최적화</h3>
+                        <p>임직원 및 부서 단위별 AI 사용량 통계를 정밀 추적하여 불필요한 과금을 줄이고 비용 낭비를 미연에 방지합니다.</p>
+                    </div>
+                    <!-- Value 3 -->
+                    <div class="card">
+                        <div class="card-icon">⚡</div>
+                        <h3>최적의 효율성</h3>
+                        <p>단 한 번의 API 설정으로 GPT, Claude, HyperCLOVA X 등 다양한 국내외 거대 언어 모델을 단일 워크플로우에 연동합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Projects</span>
+                    <h2>주요 프로젝트 쇼케이스</h2>
+                </div>
+
+                <div class="grid-3">
+                    <!-- Project 1 -->
+                    <div class="card">
+                        <div class="project-img">🔒</div>
+                        <h3>엔터프라이즈 AI 프록시 Gateway</h3>
+                        <p>사내 임직원들의 AI API 호출 로그를 가로채 개인정보 유출을 방지하는 실시간 필터 게이트웨이를 설계했습니다.</p>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="card">
+                        <div class="project-img">📊</div>
+                        <h3>스마트 비용 분석 대시보드</h3>
+                        <p>대규모 엔터프라이즈 환경에서 분산된 OpenAI 및 Anthropic 계정 비용 청구 내역을 분석 및 시각화해 줍니다.</p>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="card">
+                        <div class="project-img">🧠</div>
+                        <h3>온프레미스 경량 LLM 구축</h3>
+                        <p>보안이 극도로 민감한 금융/공공 기관을 위한 사내 서버 단독 가동형 경량(sLLM) 모델 설계 및 미세조정을 주도합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Press & News</span>
+                    <h2>주요 보도 기사</h2>
+                </div>
+
+                <div class="news-list">
+                    <!-- News 1 -->
+                    <a href="#news-detail-1" class="news-item">
+                        <div class="news-content">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="news-badge">보도자료</span>
+                                <h3 class="news-title">AI Hub, 시리즈 A 투자 유치 성공... 엔터프라이즈 AI 시장 개척</h3>
+                            </div>
+                            <div class="news-meta">
+                                <span>작성일: 2026.06.15</span>
+                                <span>작성자: 테크데일리 김기자</span>
+                            </div>
+                        </div>
+                        <div class="news-arrow">→</div>
+                    </a>
+
+                    <!-- News 2 -->
+                    <a href="#news-detail-2" class="news-item">
+                        <div class="news-content">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="news-badge">기술보도</span>
+                                <h3 class="news-title">보안 필터 탑재된 사내 AI 대시보드 v2.0 공식 론칭</h3>
+                            </div>
+                            <div class="news-meta">
+                                <span>작성일: 2026.05.02</span>
+                                <span>작성자: IT월드 박기자</span>
+                            </div>
+                        </div>
+                        <div class="news-arrow">→</div>
+                    </a>
+
+                    <!-- News 3 -->
+                    <a href="#news-detail-3" class="news-item">
+                        <div class="news-content">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="news-badge">인터뷰</span>
+                                <h3 class="news-title">"비용과 보안, 두 마리 토끼 다 잡을 것" - AI Hub 대표 인터뷰</h3>
+                            </div>
+                            <div class="news-meta">
+                                <span>작성일: 2026.04.10</span>
+                                <span>작성자: 파이낸스에디터 이기자</span>
+                            </div>
+                        </div>
+                        <div class="news-arrow">→</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Contact Us</span>
+                    <h2>오시는 길</h2>
+                </div>
+
+                <div class="location-box">
+                    <div class="map-placeholder">
+                        <div class="map-icon">📍</div>
+                        <div style="font-weight: 700; color: #0f172a;">AI Hub 서울 테크 센터</div>
+                        <div style="font-size: 0.85rem; color: #94a3b8;">(지도 API 연동 영역)</div>
+                    </div>
+
+                    <div class="location-info">
+                        <div class="info-item">
+                            <span class="info-icon">🏢</span>
+                            <div class="info-text">
+                                <h4>회사 주소</h4>
+                                <p>서울특별시 강남구 테헤란로 123, 테헤란 빌딩 15층 (AI Hub 코워킹 스페이스)</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">📞</span>
+                            <div class="info-text">
+                                <h4>대표 전화 / 이메일</h4>
+                                <p>Tel: 02-1234-5678<br>Email: contact@aihub.internal</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">🚇</span>
+                            <div class="info-text">
+                                <h4>지하철 이용 시</h4>
+                                <p>지하철 2호선 역삼역 4번 출구 도보 3분 거리</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-logo">🤖 AI Hub</div>
+            <div class="footer-links">
+                <a href="#about">회사소개</a>
+                <a href="#projects">프로젝트</a>
+                <a href="#news">뉴스</a>
+                <a href="#location">오시는길</a>
+            </div>
+            <div>&copy; 2026 AI Hub Inc. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+
+</html>

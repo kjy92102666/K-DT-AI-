@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 클래스는 스타일을 추가해주는 개념. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class-id</title>
+</head>
+
+<style>
+    /* 
+        클래스는'.' 여러 속성을 사용할 수 있다. 공백을 넣으면 안됨.(복수 사용 가능) ex: round my-box 
+        id는'#' id는 고유한 이름이기에 한페이지에서 한개만 사용할 수 있다. (단수 사용 가능)
+        id사용 방법 1.JS연동, 2.태그지정 
+        SIC. Style Id Class
+        .my-box, .round, #one-box를 선택자(셀렉터)라고한다. 원리가 
+        1.종류
+        2.조합
+        3.포함관계
+    */
+    .my-box {
+        width: 200px;
+        height: 60px;
+        background: gray;
+        margin-bottom: 20px;
+    }
+
+    .round {
+        border-radius: 50%;
+        background: rgb(64, 173, 128);
+        margin-bottom: 20px;
+    }
+
+    #one-box {
+        width: 200px;
+        height: 60px;
+        background: rgb(61, 132, 240);
+        margin-bottom: 20px;
+    }
+
+    /* 선택자. 
+       선택자. 조합해서 쓸때는 공백을 넣는다. ex: div p
+       디테일하게 스타일 적용시킬때 사용하는 선택자는? ID. (ID는 중복사용불가능. 한 페이지에서 하나만 사용가능)
+       셀렉터끼리 붙어있는 경우에는 4가지 성질이 모두 적용된다.  
+       ex: 태그 + 클래스, 클래스 + 클래스, 클래스+ID, ID+ID, 태그+ID ... ex: .my-box.round
+    */
+    div.my-box#one-box {
+        font-size: 50px;
+        font-weight: bold;
+        background: rgb(255, 0, 0);
+        margin-bottom: 40px;
+    }
+
+    /* 포함관계.
+     자식 선택자 (자식에게만 적용됨.) 
+    
+    */
+    /* .parent>span {  */
+    .parent>span {
+        /* 1차 자식에게만 적용 */
+        background: green;
+    }
+
+    .parent span {
+        /* 하위 전체 적용 */
+        background: rgb(60, 2, 221);
+    }
+</style>
+
+<body>
+
+</body>
+
+<div class="parent">
+    <span>span1</span>
+    <div>
+        <span>span2</span>
+    </div>
+    <span>span3</span>
+</div>
+<span>span4</span>
+
+
+<div class="one-box">div0</div>
+
+<div class="my-box" style="background:blue">div1</div>
+<div class="round my-box">div2</div>
+<div class="my-box">div3</div>
+<div class="my-box">div4</div>
+<div class="my-box" id="one-box">div5</div><!-- 이 경우에  div.my-box#one-box {...}셀렉터 적용-->
+
+</html>

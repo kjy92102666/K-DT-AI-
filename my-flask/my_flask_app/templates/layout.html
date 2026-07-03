@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 클래스는 스타일을 추가해주는 개념. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class-id</title>
+</head>
+
+
+<!--
+    position = position 안에 absoult를 적용시킨다. 
+    absolut는 자기 위치에서 바로 윗단계씩 부모를 찾아가서 그 기준으로 이동한다. 
+-->
+<!-- 
+    display:flex = 모든 ui만들떄 거의만능으로 쓰인다?
+ -->
+
+<body>
+    <div style="width:300px; height: 150px; background:blue; color:azure; display:flex;
+                flex-direction:row;justify-content: space-between; align-items: center;">
+        <span>login</span>
+        <span>register</span>
+        <span>logout</span>
+    </div>
+
+    <div style="width:300px; height:200px; background:gray; position:relative">
+        <div style="width:50px; height:50px; background:black; position:absolute; top:30px; left:0px;"></div>
+    </div>
+</body>
+
+
+</html>

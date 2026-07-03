@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 클래스는 스타일을 추가해주는 개념. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>front</title>
+</head>
+
+
+
+<body>
+
+    <input type="text" id="input-text" value="">
+    <h1 id="target-text">front</h1>
+    <button id="btn">click</button>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/front.js') }}"></script>
+
+
+    <!--스크립트 태그는 실행할 때 코드를 불러오기 때문에 본문보다 아래에 있는 것이 좋다.-->
+    <!-- body 태그 안에 쓰는 경우도 많음 .-->
+    <!-- <script>
+        var element = document.getElementById('btn');
+
+        element.addEventListener('click', function () { //(문자, 함수->익명함수)
+            alert('click');
+        })
+    </script> -->
+
+</body>
+
+</html>

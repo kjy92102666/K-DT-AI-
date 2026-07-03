@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+</head>
+
+<body>
+    Hello world
+    <!-- 태그나 데이터 추가시 ui진행방향을 잘 체크하자.-->
+    <div style="width:200px; height:200px; background-color: rgb(127, 255, 238); 
+                margin-top: 40px; margin-left: 40px; padding-left: 20px; box-sizing: 20px;">
+        <!--ㅡmargin : 진행 방향에 튜브를 끼워 넣는다고 생각.-->
+        <!--ㅡpadding : 지정 방향에 테두리 안쪽으로 튜브를 끼워 넣는다고 생각. 길이도 그만큼 길어짐.-->
+        안녕하세요
+        <div style="width:50px; height:50px;  background-color: rgb(207, 62, 5);">ㅎㅇ</div>
+        <div style="width:70px; height:50px;  background-color: rgb(3, 175, 40);">ㅂㅇ</div>
+    </div>
+
+    <div style="width:300px; height:150px; border:1px solid black; margin-top: 10px;">
+        <!--border는 테두리두께(a) 선의특성(b)와 실선(c). 실제 화면에서 스크롤이 생기는 이유중 하나가 보더에 실선값이 들어간 경우임.-->
+        <div style="background-color: blue; color:white;">div1</div>
+        <div style="background-color: blue; color:white;">div2</div>
+        <!-- display-inline, inline-block, block,...flex <div>가 display: block이 default 값임.  -->
+
+        <span style="background-color: rgb(197, 20, 58); color:white; display: block;">span1</span>
+        <span style="background-color: rgb(197, 20, 58); color:white; display: block;">span2</span>
+        <!-- div로 박싱 넣고 span으로 디스플레이 설정을 준다. -->
+
+        <!-- </div>
+        <header></header>
+        <aside></aside>
+        <main></main>
+        <section></section>
+        <footer></footer>
+        ... -->
+        <!-- 구조적인 구분을 할때 사용되는 태그들. 필요시 display:block 등으로 설정을 준다. -->
+    </div>
+
+    <img style="width:250px; height:250px; margin-top: 20px; margin-left: 20px;
+                object-fit: cover; border-radius: 50%;"
+        src="https://www.mediatoday.co.kr/news/photo/201602/127914_163649_1212.jpg" alt="이미지1">
+    <!-- 사이즈 최적화 못시키면 병목현상. 트래픽때문에 페이지 로딩속도가 느려짐. 
+     캐시(cache)가 있기에 한번 열어본 적 있는 애들은 빠르게 올라옴. 캐시는 브라우저에 임시저장됨.-->
+
+    <!--input. placeholder는 안내메세지.value는 기본값.-->
+    <input type="text" placeholder="내용을 입력하세요...">
+    <br />
+    <input type="text" placeholder="이름를 입력하세요" value="검성고길동">
+    <input type="password" placeholder="비밀번호를 입력하세요">
+    <input type="email" placeholder="이메일를 입력하세요">
+    <input type="number" placeholder="숫자를 입력하세요">
+    <input type="date" placeholder="날짜를 입력하세요">
+    <input type="file" placeholder="파일을 선택하세요">
+
+    <br>
+
+    <!--라디오버튼과 체크박스. 라디오는 name으로 묶어주면 한개만 선택가능. -->
+    <input type="radio" name="gender" id="male">
+    <label for="male">남자</label>
+    <input type="radio" name="gender" id="female">
+    <label for="female">여자</label>
+
+    <br>
+
+    <select>
+        <option value="apple">사과</option>
+        <option value="orange">오렌지</option>
+        <option value="grape">포도</option>
+        <option value="banana">바나나</option>
+    </select>
+
+    <!--체크박스는 name을 묶어도 한개이상 선택가능.-->
+    <input type="checkbox" name="hobby" value="reading">
+    <label for="reading">독서</label>
+    <input type="checkbox" name="hobby" value="movie">
+    <label for="movie">영화</label>
+    <input type="checkbox" name="hobby" value="music">
+    <label for="music">음악</label>
+    <input type="checkbox" name="hobby" value="travel">
+    <label for="travel">여행</label>
+
+    <button>회원가입 </button>
+    <a href="http://127.0.0.1/api/view/home">네이버</a>
+
+
+    <h1>Hello world</h1>
+    <h2>Hello world</h2>
+    <h3>Hello world</h3>
+    <h4>Hello world</h4>
+    <h5>Hello world</h5>
+    <h6>Hello world</h6>
+
+    <div style="font-size:20px; font-weight: bold; color:#81EBC1;">안녕하세요</div>
+
+</body>
+
+</html>
